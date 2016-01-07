@@ -10,7 +10,7 @@
 
 @implementation Student
 @synthesize Name=_Name,Chinese=_Chinese,Math=_Math,English=_English,Add=_Add;
--(id)initWithName:(NSString*)name Chinese:(int)chinese Math:(int)math English:(int)english Add:(int)add
+-(id)initWithName:(NSString*)name Chinese:(int)chinese Math:(int)math English:(int)english Add:(int)add  //初始化
 {
     if(self=[super init])
     {
@@ -21,7 +21,7 @@
     }
     return self;
 }
--(NSString*)description
+-(NSString*)description            //描述
 {
     NSString *format=[NSString stringWithFormat:@"<%@:%p>,Chinese=%d Math=%d English=%d Add=%d",[self class],self,self.Chinese,self.Math,self.English,self.Add];
     return format;
